@@ -10,7 +10,7 @@
     "react-scripts": "3.0.1",
     "sass-loader": "^7.1.0"
   },
-  "homepage": " https://aaa41012.github.io/myReact/",
+  "homepage": "https://aaa41012.github.io/myReact/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
