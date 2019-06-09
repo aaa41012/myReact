@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aaa41012.github.io/myReact/",
   "dependencies": {
     "classnames": "^2.2.6",
     "node-sass": "^4.12.0",
@@ -10,14 +11,13 @@
     "react-scripts": "3.0.1",
     "sass-loader": "^7.1.0"
   },
-  "homepage": "https://aaa41012.github.io/myReact/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-	  "deploy": "gh-pages -d build"
+    "deploy": "npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
