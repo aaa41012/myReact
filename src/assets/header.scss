@@ -5,6 +5,10 @@ ul{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
 .wrapHead,
 .wrapList {
     display: flex;
@@ -24,6 +28,5 @@ ul{
 }
 .wrapList li{
     flex:1;
-    cursor: pointer;
     font-size: 1.2em;
 }

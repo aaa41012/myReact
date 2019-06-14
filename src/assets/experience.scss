@@ -1,0 +1,97 @@
+.timeLine{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    .mainLine{
+        width: 1px;
+        height: 500px;
+        background: rgb(199, 201, 204);
+        position: relative;
+        animation-name:lineUp;
+        animation-duration:3s;
+        animation-fill-mode:forwards;
+        animation-timing-function:ease;
+        &::after{
+            content:'';
+            position: absolute;
+            top: -2px;
+            left:-4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: rgb(199, 201, 204);
+        }
+    }
+    .leftLine{
+        position: absolute;
+        width: 200px;
+        height: 1px;
+        left: calc(50% - 200px);
+        
+        top: 300px;
+        background: rgb(199, 201, 204);
+        animation-name:lineLeft;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+        // animation-iteration-count:infinite;
+        animation-timing-function:linear;
+        &::after{
+            content:'';
+            position: absolute;
+            top: -4px;
+            left:-4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: rgb(199, 201, 204);
+        }
+    }
+    .rightLine{
+        position: absolute;
+        width: 200px;
+        height: 1px;
+        top: 600px;
+        right: calc(50% - 200px);
+        
+        background: rgb(199, 201, 204);
+        animation-name:lineRight;
+        animation-duration:1s;
+        animation-fill-mode:forwards;
+        animation-timing-function:linear;
+        ;
+        &::after{
+            content:'';
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: rgb(199, 201, 204);
+        }
+    }
+}
+@keyframes lineUp{
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 500px;
+    }
+}
+@keyframes lineLeft{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 200px;
+    }
+}
+@keyframes lineRight{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 200px;
+    }
+}

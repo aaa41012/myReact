@@ -70,10 +70,13 @@
     width: 600px;
     height: 600px;
     border-radius: 100%;
-    background: #2AE817;
+    background: rgb(82,178,52);
     position: absolute;
     top: 1528px;
     left: -200px;
+    // 圓點背景
+    background-image: radial-gradient(#fff 10%, transparent 0), radial-gradient(#fff 17%, transparent 0);
+    background-size: 18px 18px;
     &::after{
         content: '';
         position: absolute;

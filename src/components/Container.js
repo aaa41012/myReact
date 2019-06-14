@@ -36,7 +36,7 @@ export default class Container extends Component {
                     <div></div>
                     <div></div>
                     <div></div>
-                    <div className="descripion">My webSite</div>
+                    <div className="descripion">My webSite（in a hurry to finish）</div>
                     <div className="name">JIN LIN</div>
                 </div>
                 <div className="trangle two">
