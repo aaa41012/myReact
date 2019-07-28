@@ -11,6 +11,7 @@
 
 body{
   background: rgb(239, 243, 248);
+  font-family: 'Yantramanav', sans-serif;
 }
 @keyframes App-logo-spin {
   from {

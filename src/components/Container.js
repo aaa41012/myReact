@@ -3,6 +3,21 @@ import classNames from 'classnames'
 import './../assets/container.scss'
 
 export default class Container extends Component {
+    componentDidMount () {
+        console.log('componentDidMount')
+        window.addEventListener('scroll', this.handleScroll)
+    }
+    componentWillUnmount () {
+        console.log('componentWillUnmount')
+        window.removeEventListener('scroll', this.handleScroll)
+    }
+    handleScroll = () => {
+        if (window.scrollY > 1000 && window.scrollY <   2000) {
+            document.getElementById('shape').classList.add('shapeChange')
+        } else {
+            document.getElementById('shape').classList.remove('shapeChange')
+        }
+    }
     render () {
         const dataList = [
             {
@@ -59,7 +74,7 @@ export default class Container extends Component {
                     </div>
                     <div></div>
                 </div>
-                <div className="shape"></div>
+                <div className="shape" id="shape"></div>
                 <div className="wrapGrey_one">
                     <div className="greyTrangle">
                         <div className="backToPos">

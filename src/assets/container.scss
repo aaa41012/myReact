@@ -77,6 +77,8 @@
     // 圓點背景
     background-image: radial-gradient(#fff 10%, transparent 0), radial-gradient(#fff 17%, transparent 0);
     background-size: 18px 18px;
+}
+.shapeChange {
     &::after{
         content: '';
         position: absolute;
@@ -156,10 +158,8 @@
         flex-wrap: wrap;
         justify-content: center;
         position: relative;
-        animation-name:flow;
-        animation-timing-function:ease;
-        animation-duration:5s;
-        animation-iteration-count: infinite;
+        -webkit-animation: 10s flow linear infinite normal;
+        animation: 10s flow linear infinite normal;
     }
     .whiteBlock {
         background: #fff;
@@ -194,12 +194,12 @@
 }
 @keyframes flow {
     0%{
-        top:0px;
-        left:0px;
+        // top:0px;
+        // left:0px;
     }
     100%{
-        top:-250px;
-        left:250px;
+        // top:-250px;
+        // left:250px;
     }
 }
 @keyframes pieleft{
