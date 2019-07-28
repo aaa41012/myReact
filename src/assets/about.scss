@@ -13,11 +13,12 @@ div .container img{
     font-size: 3em;
     z-index: 1;
     color: #fff;
+    top: 300px;
 }
 #mountain0,#mountain1,#mountain2,#mountain3,#mountain4,#simpleText {
     position: absolute;
     right: 0;
     left: 0;
-    transition: .3s;
-    transition-timing-function: cubic-bezier(.35,1.59,.39,.93);
+    transition: .6s;
+    transition-timing-function: cubic-bezier(.29,1.64,.44,.83);
 }

@@ -17,17 +17,17 @@ export default class About extends React.Component{
     }
     handleParallax () {
         let skyScroll = window.scrollY / 2
-        let mountain0Scroll = window.scrollY / 3
-        let mountain1Scroll = window.scrollY / 4
-        let mountain2Scroll = window.scrollY / 3
-        let mountain3Scroll = window.scrollY / 3
+        let mountain0Scroll = window.scrollY / 2
+        let mountain1Scroll = window.scrollY / 3
+        let mountain2Scroll = window.scrollY / 5
+        let mountain3Scroll = window.scrollY / 4
         let textScroll = window.scrollY / 2
         document.getElementById('sky').style.webkitTransform=`translate3d(0,${-70+skyScroll}px,0)`
-        document.getElementById('mountain0').style.webkitTransform=`translate3d(0,${-450 + mountain0Scroll}px,0)`
-        document.getElementById('mountain1').style.webkitTransform=`translate3d(0,${-400 + mountain1Scroll}px,0)`
-        document.getElementById('mountain2').style.webkitTransform=`translate3d(0,${-500 + mountain2Scroll}px,0)`
+        document.getElementById('mountain0').style.webkitTransform=`translate3d(0,${-650 + mountain0Scroll}px,0)`
+        document.getElementById('mountain1').style.webkitTransform=`translate3d(0,${-550 + mountain1Scroll}px,0)`
+        document.getElementById('mountain2').style.webkitTransform=`translate3d(0,${-450 + mountain2Scroll}px,0)`
         document.getElementById('mountain3').style.webkitTransform=`translate3d(0,${-410 + mountain3Scroll}px,0)`
-        document.getElementById('simpleText').style.webkitTransform=`translate3d(0,${200 + textScroll}px,0)`
+        document.getElementById('simpleText').style.webkitTransform=`translate3d(0,${ textScroll}px,0)`
     }
     render(){
         return (
@@ -51,6 +51,9 @@ export default class About extends React.Component{
                     <div id="mountain1">
                         <img src={mountain1} alt="mountain1"/>
                     </div>
+                </div>
+                <div>
+                    
                 </div>
             </div>
         )
