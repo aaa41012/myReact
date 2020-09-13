@@ -21,6 +21,7 @@ export default class Ability extends React.Component{
                 <div><img src={jquery_logo} alt="jquery"/></div>
                 <div><img src={sorceTree_logo} alt="sourceTree"/></div>
                 <div><img src={git_logo} alt="git"/></div>
+                test_jenkins
             </div>
             
         )
